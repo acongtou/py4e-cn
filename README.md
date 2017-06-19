@@ -1,3 +1,10 @@
+# Python for Everybody 中文翻译
+
+## 翻译进展
+
+20170619 我会从book3文件夹下的.mkd文件开始翻译。
+
+
 # pythonlearn
 
 Web site for www.pythonlearn.com
