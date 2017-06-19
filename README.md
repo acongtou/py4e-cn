@@ -15,6 +15,8 @@
 Python2版中文翻译质量很高，且原英文版中大多数地方，特别是文本内容，Python3和Python2是一致的。所以从“1.2 计算机硬件架构”开始，
 转变为读一段英文后，对比中文，大意无变化，就使用了原翻译。如果原文有改动，则自行翻译。
 
+在借用Python2的翻译时，添加了原英文版中的斜体等格式。
+
 
 # pythonlearn
 
@@ -33,7 +35,7 @@ For the work in progress.
 
 To host this
 
-    cp config-dist.php config.php 
+    cp config-dist.php config.php
 
 And edit the variables as necessary
 
