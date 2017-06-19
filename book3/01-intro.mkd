@@ -1,45 +1,31 @@
-% Python for Everybody 
+% Python for Everybody
 % Exploring Data Using Python 3
 % Charles R. Severance
 
-Why should you learn to write programs?
+为什么要学编程？
 =======================================
 
-Writing programs (or programming) is a very creative and rewarding
-activity. You can write programs for many reasons, ranging from making
-your living to solving a difficult data analysis problem to having fun
-to helping someone else solve a problem. This book assumes that
-*everyone* needs to know how to program, and that once you know how to
-program you will figure out what you want to do with your newfound
-skills.
+编程是一项极具创造性和有益的活动。编程的原因很多，大到为谋生去解决一个困难的数据分析问题，小到因
+为帮助别人解决一个问题而获得快乐。本书假定 *每个人* 都需要知道怎样编程，一旦学会编程，你就会想要
+用这个新技能做些什么了。
 
-We are surrounded in our daily lives with computers ranging from laptops
-to cell phones. We can think of these computers as our "personal
-assistants" who can take care of many things on our behalf. The hardware
-in our current-day computers is essentially built to continuously ask us
-the question, "What would you like me to do next?"
+我们的日常生活中计算机无处不在，大到笔记本电脑，小到手机。这些计算机可视为帮助我们打理很多事情的
+“私人助理”。 在本质上，如今计算机硬件的构建，就是在不断地问我们一个问题，即“你（用户）想让我（计
+算机）下一步做什么”。
 
-![Personal Digital Assistant](height=1.0in@../images/pda)
+![个人数字助理](height=1.0in@../images/pda)
 
-Programmers add an operating system and a set of applications to the
-hardware and we end up with a Personal Digital Assistant that is quite
-helpful and capable of helping us do many different things.
+程序员在硬件之上添加了操作系统和应用程序，我们手中拿到的成品是一个很有用的个人数字助理（PDA，
+Personal Digital Assistant），它能够帮我们处理很多不同的事情。
 
-Our computers are fast and have vast amounts of memory and could be very
-helpful to us if we only knew the language to speak to explain to the
-computer what we would like it to "do next". If we knew this language,
-we could tell the computer to do tasks on our behalf that were
-repetitive. Interestingly, the kinds of things computers can do best are
-often the kinds of things that we humans find boring and mind-numbing.
+计算机运行速度很快并拥有大量的内存，如果我们学会了与计算机沟通的语言，告诉计算机我们想要它“接下
+来做什么”，那么它就会对我们有非常大的帮助。我们能让计算机根据我们的意愿完成一些重复性工作。有趣
+的是，计算机能够胜任并且做得很好的工作通常是那些让我们人类感到无聊、令人头脑麻木的事情。
 
-For example, look at the first three paragraphs of this chapter and tell
-me the most commonly used word and how many times the word is used.
-While you were able to read and understand the words in a few seconds,
-counting them is almost painful because it is not the kind of problem
-that human minds are designed to solve. For a computer the opposite is
-true, reading and understanding text from a piece of paper is hard for a
-computer to do but counting the words and telling you how many times the
-most used word was used is very easy for the computer:
+例如，阅读本章的前三段，找出出现频率最高的词是哪一个，以及这个词总共出现了多少次。尽管你能在短时
+间内阅读和理解这些文字，但要对它们进行统计就很痛苦了，因为这类问题不是人的大脑擅长解决的。计算机
+恰好相反，它很难像人一样阅读和理解一段文字，但是对文字进行统计并告诉你出现频率最高的词及其出现次
+数，对计算机而言是非常容易的：
 
 ~~~~ {.python}
     python words.py
@@ -47,179 +33,85 @@ most used word was used is very easy for the computer:
     to 16
 ~~~~
 
-Our "personal information analysis assistant" quickly told us that the
-word "to" was used sixteen times in the first three paragraphs of this
-chapter.
+“个人信息分析助理”很快告诉我们，单词“to“在本章前三段中一共出现了16次。
 
-This very fact that computers are good at things that humans are not is
-why you need to become skilled at talking "computer language". Once you
-learn this new language, you can delegate mundane tasks to your partner
-(the computer), leaving more time for you to do the things that you are
-uniquely suited for. You bring creativity, intuition, and inventiveness
-to this partnership.
+事实上，计算机擅长做人类不擅长做的事，这就是为什么你需要熟练掌握一门“与计算机对话的语言”。一旦学
+会这门新语言，你就可以将枯燥的工作指派给你的搭档（计算机）了。留出更多的时间去做适合你自己的事。
+在这种合作关系中，你的贡献是才思、直觉力和创造力。
 
-Creativity and motivation
+创新与动机
 -------------------------
 
-While this book is not intended for professional programmers,
-professional programming can be a very rewarding job both financially
-and personally. Building useful, elegant, and clever programs for others
-to use is a very creative activity. Your computer or Personal Digital
-Assistant (PDA) usually contains many different programs from many
-different groups of programmers, each competing for your attention and
-interest. They try their best to meet your needs and give you a great
-user experience in the process. In some situations, when you choose a
-piece of software, the programmers are directly compensated because of
-your choice.
+这本书不是为专业程序员准备的，专业编程是份非常有前途的工作，可算是物质与精神双丰收。为他人创造有用的、简洁的与智能的程序是一项创新性很强的活动。你的计算机或PDA通常安装了来自许多不同程序员开发的各种软件，每一款软件都想要吸引你的注意力和兴趣。它们尽其所能来满足你的需求，在使用过程中让你获得优质的用户体验。在某些情况下，当你选择了一个软件，这个软件的开发者就会因为你的选择而直接获得收益。
 
-If we think of programs as the creative output of groups of programmers,
-perhaps the following figure is a more sensible version of our PDA:
+如果将程序看作是一群程序员的创造性产出，那么下图就是一个更形象的PDA模型：
 
-![Programmers Talking to You](height=1.0in@../images/pda2)
+![程序员在对你说](height=1.0in@../images/pda2)
 
-For now, our primary motivation is not to make money or please end
-users, but instead for us to be more productive in handling the data and
-information that we will encounter in our lives. When you first start,
-you will be both the programmer and the end user of your programs. As
-you gain skill as a programmer and programming feels more creative to
-you, your thoughts may turn toward developing programs for others.
+本书的写作初衷不是为了赚钱或者取悦最终用户，而是让我们能更好地处理生活中的数据与信息。开始学编程，你既是程序员，也是你所写程序的最终用户。当你获得了程序员的技能，如果编程让你感到有创新活力的话，到时你的想法也许会发生改变，转向为他人开发程序也说不定。
 
-Computer hardware architecture
+
+计算机硬件架构
 ------------------------------
 
 \index{hardware}
 \index{hardware!architecture}
 
-Before we start learning the language we speak to give instructions to
-computers to develop software, we need to learn a small amount about how
-computers are built. If you were to take apart your computer or cell
-phone and look deep inside, you would find the following parts:
+学习这种向计算机发指令来开发软件的语言之前，我们需要了解一下计算机的构成。
+如果拆开你的计算机或者手机，仔细观察就会发现以下这些组件：
 
 ![Hardware Archicture](height=1.75in@../images/arch)
 
-The high-level definitions of these parts are as follows:
+这些组件的一般定义如下：
 
--   The *Central Processing Unit* (or CPU) is the part of
-    the computer that is built to be obsessed with "what is next?" If
-    your computer is rated at 3.0 Gigahertz, it means that the CPU will
-    ask "What next?" three billion times per second. You are going to
-    have to learn how to talk fast to keep up with the CPU.
+-   *中央处理器*（Central Processing Unit ，CPU）是专门为解决“下一步做什么”而存在的组件。如果计算机处理速度达到3.0 GHz，这就意味着CPU每秒会提问30亿次“下一步做什么？”。你不得不学会如何跟CPU如此快速地交谈与保持同步。
 
--   The *Main Memory* is used to store information that
-    the CPU needs in a hurry. The main memory is nearly as fast as the
-    CPU. But the information stored in the main memory vanishes when the
-    computer is turned off.
+-   *主存储器*（Main Memory）用来存储CPU即刻需要的信息。主存储器的速度几乎与CPU不相上下。但是，关闭计算机之后主存储器里的信息也就消失了。
 
--   The *Secondary Memory* is also used to store
-    information, but it is much slower than the main memory. The
-    advantage of the secondary memory is that it can store information
-    even when there is no power to the computer. Examples of secondary
-    memory are disk drives or flash memory (typically found in USB
-    sticks and portable music players).
+-   *辅助存储器*（Secondary Memory）也是用来存储信息的，但是它比主存储器速度慢很多。辅助存储器的优点是，它可以在计算机不带电情况下存储信息。常见辅助存储器包括磁盘和闪存。闪存通常用在U盘和便携式音乐播放器上。
 
--   The *Input and Output Devices* are simply our screen,
-    keyboard, mouse, microphone, speaker, touchpad, etc. They are all of
-    the ways we interact with the computer.
+-   *输入输出设备*（Input and Output Devices）包括屏幕、键盘、鼠标、麦克风、扬声器以及触摸板等。这些都是用来与计算机进行交互的设备。
 
--   These days, most computers also have a *Network
-    Connection* to retrieve information over a network. We can
-    think of the network as a very slow place to store and retrieve data
-    that might not always be "up". So in a sense, the network is a
-    slower and at times unreliable form of *Secondary
-    Memory*.
+-   如今大多数计算机之间还建立了 *网络连接*，通过网络获取信息。我们可以将网络看成信息存储与检索速度很慢的一个空间，而且不总是那么稳定。从某种意义上讲，网络是速度很慢且并不是那么可靠的 *辅助存储器*。
 
-While most of the detail of how these components work is best left to
-computer builders, it helps to have some terminology so we can talk
-about these different parts as we write our programs.
+这些组件的工作原理细节最好还是交给计算机厂商吧。这里只是为了掌握一些术语，在编程时方便提及这些组件。
 
-As a programmer, your job is to use and orchestrate each of these
-resources to solve the problem that you need to solve and analyze the
-data you get from the solution. As a programmer you will mostly be
-"talking" to the CPU and telling it what to do next. Sometimes you will
-tell the CPU to use the main memory, secondary memory, network, or the
-input/output devices.
+作为一名程序员，你的工作就是利用并协调这些资源来解决问题和分析数据。作为程序员，你主要与CPU打交道，告诉它下一步做什么。有时，你要告诉CPU调用主存储器、辅助存储器、网络或输入输出设备。
 
 ![Where Are You?](height=1.75in@../images/arch2)
 
-You need to be the person who answers the CPU's "What next?" question.
-But it would be very uncomfortable to shrink you down to 5mm tall and
-insert you into the computer just so you could issue a command three
-billion times per second. So instead, you must write down your
-instructions in advance. We call these stored instructions a
-*program* and the act of writing these instructions down
-and getting the instructions to be correct *programming*.
+你需要成为回答CPU“下一步做什么”的人。但把你压缩到5毫米高，塞入计算机，让你每秒发出3亿次命令，想必这样会很不舒服。所以，你必须提前写好你的指令。我们把这些存储下来的指令称为 *程序*，编写指令并进行调试的活动称之为 *编程*。
 
-Understanding programming
+理解编程
 -------------------------
 
-In the rest of this book, we will try to turn you into a person who is
-skilled in the art of programming. In the end you will be a
-*programmer* - perhaps not a professional programmer, but
-at least you will have the skills to look at a data/information analysis
-problem and develop a program to solve the problem.
+在本书其他章节中，我们尝试把你培养成长为一名理解编程艺术并具备一定编程能力的人。最后，你会成为一个 *程序员*，也许不是专业的。但至少你掌握了如何看待数据（信息）分析问题，并开发出解决问题的程序。
 
 \index{problem solving}
 
-In a sense, you need two skills to be a programmer:
+从某种意义上来说，程序员的养成需要两种技能：
 
--   First, you need to know the programming language (Python) - you need
-    to know the vocabulary and the grammar. You need to be able to spell
-    the words in this new language properly and know how to construct
-    well-formed "sentences" in this new language.
+-   首先，需要掌握编程语言（Python）本身—— 熟悉词汇和语法。能够准确地拼写这门新语言中的单词，并且掌握如何使用这门新语言正确地“造句”。
 
--   Second, you need to "tell a story". In writing a story, you combine
-    words and sentences to convey an idea to the reader. There is a
-    skill and art in constructing the story, and skill in story writing
-    is improved by doing some writing and getting some feedback. In
-    programming, our program is the "story" and the problem you are
-    trying to solve is the "idea".
+-   其次，学会讲故事。在写故事的过程中，通过文字和句式的组合，向读者传达思想。编故事的艺术与能力通过写作与反馈得以提高。在编程中，程序即故事，待解决的问题即传达的想法。
 
-Once you learn one programming language such as Python, you will find it
-much easier to learn a second programming language such as JavaScript or
-C++. The new programming language has very different vocabulary and
-grammar but the problem-solving skills will be the same across all
-programming languages.
+当掌握一种编程语言（如Python）之后，你会发现学习其他编程语言，如JavaScript或者C++，就会容易许多。虽然新的编程语言拥有很多不同的词汇和语法，但你已经学会解决问题的技能，所有编程语言本质上都是相通的。
 
-You will learn the "vocabulary" and "sentences" of Python pretty
-quickly. It will take longer for you to be able to write a coherent
-program to solve a brand-new problem. We teach programming much like we
-teach writing. We start reading and explaining programs, then we write
-simple programs, and then we write increasingly complex programs over
-time. At some point you "get your muse" and see the patterns on your own
-and can see more naturally how to take a problem and write a program
-that solves that problem. And once you get to that point, programming
-becomes a very pleasant and creative process.
+Python的词汇和句式上手很快，但要能写出一些连贯的程序来解决一个全新的问题，尚需时日磨练。讲授编程就像讲授写作一样。先对程序进行阅读和解释，然后编写简单的程序，接着逐步编写更复杂的程序。当达到一定水平，你就形成了自己的编程风格，自然而然地去应对问题，通过编写程序解决它。一旦修炼到这个程度，编程就变成一个愉悦且富有创造力的过程了。
 
-We start with the vocabulary and structure of Python programs. Be
-patient as the simple examples remind you of when you started reading
-for the first time.
+我们从Python程序的词汇和结构讲起。第一次阅读时，一定要耐心学习那些简单的例子。
 
-Words and sentences
+词汇与句子
 -------------------
 
 \index{programming language}
 \index{language!programming}
 
-Unlike human languages, the Python vocabulary is actually pretty small.
-We call this "vocabulary" the "reserved words". These are words that
-have very special meaning to Python. When Python sees these words in a
-Python program, they have one and only one meaning to Python. Later as
-you write programs you will make up your own words that have meaning to
-you called *variables*. You will have great latitude in
-choosing your names for your variables, but you cannot use any of
-Python's reserved words as a name for a variable.
+与人类语言不同的是，Python的词汇数量实际上相当少。我们称这些“词汇”为“保留字”，它们是Python中具有特殊意义的词汇。对于Python来说，程序中出现的这些词汇，它们有且仅有一个含义。等下你在编程时，你自己定义的词汇称为 *变量*。变量命名非常自由，但有一点，你不能使用Python的保留字作为变量名。
 
-When we train a dog, we use special words like "sit", "stay", and
-"fetch". When you talk to a dog and don't use any of the reserved words,
-they just look at you with a quizzical look on their face until you say
-a reserved word. For example, if you say, "I wish more people would walk
-to improve their overall health", what most dogs likely hear is, "blah
-blah blah *walk* blah blah blah blah." That is because
-"walk" is a reserved word in dog language. Many might suggest that the
-language between humans and cats has no reserved words^[<http://xkcd.com/231/>].
+从某种意义上讲，我们训练一只狗时会使用一些特殊的词汇，比如“坐下”、“停下”和“拿来”。跟狗说话时不用这些保留字的话，它们就会傻傻地看着你，直到你对它说出保留字。举例来说，“我希望更多的人通过散步来促进健康。”，而大多数狗听到的可能是，“吧啦吧啦 *散步* 吧啦吧啦。”这是因为在狗的语言中“散步”是保留字。很多人可能觉得人类和猫之间的语言没有保留字^[<http://xkcd.com/231/>].
 
-The reserved words in the language where humans talk to Python include
-the following:
+Python的保留字如下：
 
     and       del       global      not       with
     as        elif      if          or        yield
@@ -229,38 +121,22 @@ the following:
     continue  for       lambda      try
     def       from      nonlocal    while    
 
-That is it, and unlike a dog, Python is already completely trained. When
-you say "try", Python will try every time you say it without fail.
+就这么多词汇。Python比狗训练有素多了。当你说“try”，Python会毫无差错地执行try。
 
-We will learn these reserved words and how they are used in good time,
-but for now we will focus on the Python equivalent of "speak" (in
-human-to-dog language). The nice thing about telling Python to speak is
-that we can even tell it what to say by giving it a message in quotes:
+后续章节会介绍这些保留字及它们的适用场合。现在，我们只关注怎么与Python *对话*（就像人跟狗说话）。教Python说话是件有意思的事情，把想要说的话用引号括起来就可以了。
 
 ~~~~ {.python}
     print('Hello world!')
 ~~~~
 
-And we have even written our first syntactically correct Python
-sentence. Our sentence starts with the function *print* 
-followed by a string of text of our choosing enclosed in single quotes.
+这就是我们写出的第一个语法正确的Python语句。我们的句子以函数 *print* 开头，后面跟一个文本字符串，用单引号括起来。
 
-Conversing with Python
+与Python对话
 ----------------------
 
-Now that we have a word and a simple sentence that we know in Python, we
-need to know how to start a conversation with Python to test our new
-language skills.
+我们已经掌握了Python的一个词汇与一个简单语句，接下来需要了解如何与Python对话，测试我们的新语言技能。
 
-Before you can converse with Python, you must first install the Python
-software on your computer and learn how to start Python on your
-computer. That is too much detail for this chapter so I suggest that you
-consult [www.py4e.com](http://www.py4e.com) where I have detailed
-instructions and screencasts of setting up and starting Python on
-Macintosh and Windows systems. At some point, you will be in a terminal
-or command window and you will type *python* and the
-Python interpreter will start executing in interactive mode and appear
-somewhat as follows:
+与Python对话之前，必须先在计算机上安装Python软件，学会如何启动Python。本章包含许多细节，建议查看 [www.py4e.com](http://www.py4e.com)，网站上有Python在Mac和Windows系统上配置和启动的详细说明和视频演示。当打开终端或者命令行窗口，输入python，Python解析器会以交互模式启动，如下所示：
 
 \index{interactive mode}
 
@@ -271,15 +147,9 @@ somewhat as follows:
     >>>
 ~~~~
 
-The `>>>` prompt is the Python interpreter's way of asking
-you, "What do you want me to do next?" Python is ready to have a
-conversation with you. All you have to know is how to speak the Python
-language.
+‘>>>’提示符表示Python解析器在询问，“你希望我下一步做什么？”。Python已经准备好与你对话。你需要掌握的是怎样说Python语言，发起一个对话。
 
-Let's say for example that you did not know even the simplest Python
-language words or sentences. You might want to use the standard line
-that astronauts use when they land on a faraway planet and try to speak
-with the inhabitants of the planet:
+举个例子，你对Python语言最简单的词汇或句子一无所知，想要使用宇航员的标准用语（喊话）。宇航员在一个遥远的星球登陆，试着和这个星球的居民用以下语句对话:
 
 ~~~~ {.python}
     >>> I come in peace, please take me to your leader
@@ -290,19 +160,16 @@ with the inhabitants of the planet:
     >>>
 ~~~~
 
-This is not going so well. Unless you think of something quickly, the
-inhabitants of the planet are likely to stab you with their spears, put
-you on a spit, roast you over a fire, and eat you for dinner.
+事情进展好像并不顺利。除非你反应迅速，否则这个星球的居民可能会拿长矛刺向你，向你吐口水，然后把你放在火上烤，当成晚饭吃掉。
 
-Luckily you brought a copy of this book on your travels, and you thumb
-to this very page and try again:
+幸运的是，旅行时你带了这本书，及时翻到了这一页，再试一次：
 
 ~~~~ {.python}
     >>> print('Hello world!')
     Hello world!
 ~~~~
 
-This is looking much better, so you try to communicate some more:
+这次看起来效果不错，试着与他们继续对话：
 
 ~~~~ {.python}
     >>> print('You must be the legendary god that comes from the sky')
@@ -319,26 +186,13 @@ This is looking much better, so you try to communicate some more:
     >>>
 ~~~~
 
-The conversation was going so well for a while and then you made the
-tiniest mistake using the Python language and Python brought the spears
-back out.
+上面的对话一直进展顺利，只到你在使用Python语言的时候犯了一个非常小的错误，Python就又把长矛拿出来了。
 
-At this point, you should also realize that while Python is amazingly
-complex and powerful and very picky about the syntax you use to
-communicate with it, Python is *not* intelligent. You are
-really just having a conversation with yourself, but using proper
-syntax.
+此时，你应该意识到，Python虽然非常复杂与强大，但在语法上非常挑剔，并 *不* 那么智能。对话中必须使用正确的语法。
 
-In a sense, when you use a program written by someone else the
-conversation is between you and those other programmers with Python
-acting as an intermediary. Python is a way for the creators of programs
-to express how the conversation is supposed to proceed. And in just a
-few more chapters, you will be one of those programmers using Python to
-talk to the users of your program.
+在某种意义上，当你使用别人写的程序时，Python就在你和其他程序员之间充当中间人。Python是程序编写者将对话进行下去的一种方式。在阅读完短短几章之后，你将成为Python程序员中的一员，与你的程序使用者进行对话。
 
-Before we leave our first conversation with the Python interpreter, you
-should probably know the proper way to say "good-bye" when interacting
-with the inhabitants of Planet Python:
+结束与Python解析器的第一次谈话之前，你可能要知道如何正确地与这个星球的居民说“再见”：
 
 ~~~~ {.python}
     >>> good-bye
@@ -353,29 +207,16 @@ with the inhabitants of Planet Python:
     >>> quit()
 ~~~~
 
-You will notice that the error is different for the first two incorrect
-attempts. The second error is different because *if* is a
-reserved word and Python saw the reserved word and thought we were
-trying to say something but got the syntax of the sentence wrong.
+你会发现前两个错误提示是不同的。由于 *if* 是保留字，Python看到保留字会认为我们想说些什么，但句子的语法是错的。
 
-The proper way to say "good-bye" to Python is to enter
-*quit()* at the interactive chevron `>>>`
-prompt. It would have probably taken you quite a while to guess that
-one, so having a book handy probably will turn out to be helpful.
+跟Python说“再见”的正确方法是，在交互模式的提示符'>>>'后输入 *quit()*。猜出这个命令这可能会花费一些时间，所以手头备本书可能会派上用场。
 
-Terminology: interpreter and compiler
+术语：解释器与编译器
 -------------------------------------
 
-Python is a *high-level* language intended to be
-relatively straightforward for humans to read and write and for
-computers to read and process. Other high-level languages include Java,
-C++, PHP, Ruby, Basic, Perl, JavaScript, and many more. The actual
-hardware inside the Central Processing Unit (CPU) does not understand
-any of these high-level languages.
+Python是一种 *高级语言*，旨在较为方便地让人类进行读写，让计算进行读取与处理。其他高级语言包括：Java、C++、PHP、Ruby、Basic、Perl以及JavaScript等。CPU里的硬件并不能理解任何一种高级语言。
 
-The CPU understands a language we call *machine
-language*. Machine language is very simple and frankly very
-tiresome to write because it is represented all in zeros and ones:
+CPU能理解的语言称之为 *机器语言*。机器语言非常简单，坦白讲，编写起来非常无聊。它全部由0和1组成：
 
 ~~~~
     001010001110100100101010000001111
@@ -661,7 +502,7 @@ written programs and rejects them as "unfit" just to torment us.
     Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     NameError: name 'primt' is not defined
-    
+
     >>> I hate you Python!
       File "<stdin>", line 1
         I hate you Python!
@@ -931,4 +772,3 @@ Memory, (4) Input Device, and (5) Output Device. For example, "What is
 the human equivalent to a Central Processing Unit"?
 
 Exercise 9: How do you fix a "Syntax Error"?
-
