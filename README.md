@@ -2,7 +2,12 @@
 
 ## 翻译进展
 
-20170619 我会从book3文件夹下的.mkd文件开始翻译。会借助之前的翻译，感谢。
+20170619 asdf
+
+我会从本项目book3文件夹下的.mkd文件开始翻译。会借助之前的翻译，感谢sdaf
+
+找到Python2版本的翻译 https://www.gitbook.com/book/fanwscu/py4inf-zh-cn/details。asdf
+
 
 
 # pythonlearn
