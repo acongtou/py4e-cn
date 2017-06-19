@@ -8,6 +8,8 @@
 
 找到Python2版本的翻译 https://www.gitbook.com/book/fanwscu/py4inf-zh-cn/details 译者：范炜、张功卫、王骏。
 
+从`book3/01-intro.mkd`开始翻译的。
+
 刚开始是逐句阅读，对比Python3版英文和Python2版中文，逐句翻译。
 
 Python2版中文翻译质量很高，且原英文版中大多数地方，特别是文本内容，Python3和Python2是一致的。所以从“1.2 计算机硬件架构”开始，
