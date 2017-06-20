@@ -224,36 +224,15 @@ CPU能理解的语言称之为 *机器语言*。机器语言非常简单，坦�
     ...
 ~~~~
 
-Machine language seems quite simple on the surface, given that there are
-only zeros and ones, but its syntax is even more complex and far more
-intricate than Python. So very few programmers ever write machine
-language. Instead we build various translators to allow programmers to
-write in high-level languages like Python or JavaScript and these
-translators convert the programs to machine language for actual
-execution by the CPU.
+虽然机器语言表面看起来很简单，只有0和1，但它的语法比Python复杂得多。所以，很少有程序员用机器语言编程。相反，借助各种翻译器，程序员可以编写像Python或JavaScript这样的高级语言，这些翻译器会将程序转换成机器语言，再交由CPU执行。
 
-Since machine language is tied to the computer hardware, machine
-language is not *portable* across different types of
-hardware. Programs written in high-level languages can be moved between
-different computers by using a different interpreter on the new machine
-or recompiling the code to create a machine language version of the
-program for the new machine.
+因为机器语言依附于计算机硬件，所以不能在不同类型硬件之间移植。使用高级语言编写的程序可以在不同的计算机之间移植，通过在另一台计算机上使用不同的编译器，或者重新编译代码，生成一个适合这台计算机的机器语言版本。
 
-These programming language translators fall into two general categories:
-(1) interpreters and (2) compilers.
+编程语言的翻译器大体可分为两类：(1)解释器 与 (2) 编译器。
 
-An *interpreter* reads the source code of the program as
-written by the programmer, parses the source code, and interprets the
-instructions on the fly. Python is an interpreter and when we are
-running Python interactively, we can type a line of Python (a sentence)
-and Python processes it immediately and is ready for us to type another
-line of Python.
+*解释器* 读取程序员所写程序的源代码，解析源代码并实时解释指令。Python是一种解释器。当交互式执行Python时，输入一行Python语句，Python就会立即处理它，并做好准备让我们输入下一条语句。
 
-Some of the lines of Python tell Python that you want it to remember
-some value for later. We need to pick a name for that value to be
-remembered and we can use that symbolic name to retrieve the value
-later. We use the term *variable* to refer to the labels
-we use to refer to this stored data.
+Python语句中有一些地方会告诉Python，你想要Python记住等下会用到的一些数据。这时就需要为数据挑选一个名称来记住它，这样之后就可以通过这个名称来获取对应的数据了。我们使用 *变量*（variable）来代表存储的数据。
 
 ~~~~ {.python}
     >>> x = 6
@@ -265,34 +244,15 @@ we use to refer to this stored data.
     >>>
 ~~~~
 
-In this example, we ask Python to remember the value six and use the
-label *x* so we can retrieve the value later. We verify
-that Python has actually remembered the value using
-*print*. Then we ask Python to retrieve
-*x* and multiply it by seven and put the newly computed
-value in *y*. Then we ask Python to print out the value
-currently in *y*.
+在这个例子中，我们让Python记住数值6，并将6赋值给变量 *x*，以便后续使用。为了确认Python已经记住这个数值，使用 *print* 命令打印它。接下来，我们让Python获取变量 *x* 的值并乘以7，然后将结果赋给新变量 *y*。最后，打印出变量 *y* 的当前值。
 
-Even though we are typing these commands into Python one line at a time,
-Python is treating them as an ordered sequence of statements with later
-statements able to retrieve data created in earlier statements. We are
-writing our first simple paragraph with four sentences in a logical and
-meaningful order.
+尽管我们一次只输入了一行命令，但Python将其视为一个语句序列，后面的语句可以获取前面语句的数据。四句组成的段落以一种有逻辑的和有意义的顺序编写，这就是我们写出的第一个简单的多行程序。
 
-It is the nature of an *interpreter* to be able to have
-an interactive conversation as shown above. A *compiler*
-needs to be handed the entire program in a file, and then it runs a
-process to translate the high-level source code into machine language
-and then the compiler puts the resulting machine language into a file
-for later execution.
+如上所示，解释器的本质是进行交互式对话。而编译器需要将整个程序放在一个文件中，将高层次的源代码翻译成低层次的机器语言，然后编译器将生成的机器语言放到一个文件中以便后续执行。
 
-If you have a Windows system, often these executable machine language
-programs have a suffix of ".exe" or ".dll" which stand for "executable"
-and "dynamic link library" respectively. In Linux and Macintosh, there
-is no suffix that uniquely marks a file as executable.
+如果你使用Windows系统，这些可执行的机器语言程序通常带有“.exe”或“.dll”后缀，分别代表这是“可执行的”和“动态可加载库”。在Linux和Mac中没有这样的后缀来明确表示文件是否是可执行的。
 
-If you were to open an executable file in a text editor, it would look
-completely crazy and be unreadable:
+如果在文本编辑器中打开一个可执行文件，满眼望去完全看不懂：
 
 ~~~~
     ^?ELF^A^A^A^@^@^@^@^@^@^@^@^@^B^@^C^@^A^@^@^@\xa0\x82
@@ -303,31 +263,17 @@ completely crazy and be unreadable:
     ....
 ~~~~
 
-It is not easy to read or write machine language, so it is nice that we
-have *interpreters* and *compilers* that
-allow us to write in high-level languages like Python or C.
+机器语言的读写并不容易，好在借助 *解释器* 和 *编译器*，能够使用Python或C这样的高级语言编写程序。
 
-Now at this point in our discussion of compilers and interpreters, you
-should be wondering a bit about the Python interpreter itself. What
-language is it written in? Is it written in a compiled language? When we
-type "python", what exactly is happening?
+通过对解释器与编译器的讨论，你应该对Python解释器本身有了一些了解。你应该想问那它又是用什么语言写的？是用编译语言写的吗?当我们输入“python”，究竟发生了什么?
 
-The Python interpreter is written in a high-level language called "C".
-You can look at the actual source code for the Python interpreter by
-going to [www.python.org](http://www.python.org) and working your way to their
-source code. So Python is a program itself and it is compiled into
-machine code. When you installed Python on your computer (or the vendor
-installed it), you copied a machine-code copy of the translated Python
-program onto your system. In Windows, the executable machine code for
-Python itself is likely in a file with a name like:
+Python的解释器是用C语言编写的。你可以访问http://www.python.org网站，查看Python解释器的源代码，如有你有意愿改造这些源代码也是可以的。Python本身就是一个程序，它被编译成机器代码。当你（或计硬件供应商）在计算机上安装了Python，实际是上将一份编译好的Python程序的机器代码拷贝到你的计算机系统。在Windows中，Python可执行的机器代码很可能位于以下文件夹中:
 
 ~~~~
     C:\Python35\python.exe
 ~~~~
 
-That is more than you really need to know to be a Python programmer, but
-sometimes it pays to answer those little nagging questions right at the
-beginning.
+要成为一名Python程序员，你并不一定的需要知道上述这些。但在一开始，花一些时间解释这些细节问题，还是值得的。
 
 Writing a program
 -----------------
