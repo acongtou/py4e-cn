@@ -506,29 +506,28 @@ print函数
 :   程序的高级语言代码。
 \index{source code}
 
-Exercises
+习题
 ---------
 
-Exercise 1: What is the function of the secondary memory in a computer?
+习题 1: 计算机中的辅助存储器的功能是什么？
 
-a\) Execute all of the computation and logic of the program\
-b) Retrieve web pages over the Internet\
-c) Store information for the long term, even beyond a power cycle\
-d) Take input from the user
+a\) 执行程序的所有计算和逻辑\
+b) 在互联网上检索网页\
+c) 长期存储信息，就算重启之后信息也不会丢失\
+d) 接收用户的输入
 
-Exercise 2: What is a program?
+习题 2: 什么是程序？
 
-Exercise 3: What is the difference between a compiler and an
-interpreter?
+习题 3: 编译器和解释器有什么区别？
 
-Exercise 4: Which of the following contains "machine code"?
+习题 4: 下面哪一个含有“机器代码”？
 
-a\) The Python interpreter\
-b) The keyboard\
-c) Python source file\
-d) A word processing document
+a\) Python解释器\
+b) 键盘\
+c) Python源文件\
+d) 文本文档
 
-Exercise 5: What is wrong with the following code:
+习题 5: 请找出下面代码的错误：
 
 ~~~~ {.python}
     >>> primt 'Hello world!'
@@ -539,20 +538,19 @@ Exercise 5: What is wrong with the following code:
     >>>
 ~~~~
 
-Exercise 6: Where in the computer is a variable such as "X" stored after
-the following Python line finishes?
+习题 6: 执行以下Python语句后，变量“x”存于何处？
 
 ~~~~ {.python}
     x = 123
 ~~~~
 
-a\) Central processing unit\
-b) Main Memory\
-c) Secondary Memory\
-d) Input Devices\
-e) Output Devices
+a\) 中央处理器\
+b) 主存储器\
+c) 辅助存储器\
+d) 输入设备\
+e) 输出设备
 
-Exercise 7: What will the following program print out:
+习题 7: 以下程序会输出什么？
 
 ~~~~ {.python}
     x = 43
@@ -563,11 +561,8 @@ Exercise 7: What will the following program print out:
 a\) 43\
 b) 44\
 c) x + 1\
-d) Error because x = x + 1 is not possible mathematically
+d) 报错，因为x = x + 1在数学上讲不通
 
-Exercise 8: Explain each of the following using an example of a human
-capability: (1) Central processing unit, (2) Main Memory, (3) Secondary
-Memory, (4) Input Device, and (5) Output Device. For example, "What is
-the human equivalent to a Central Processing Unit"?
+习题 8: 以人作类比，解释以下事物： (1) 中央处理器, (2) 主存储器, (3) 辅助存储器, (4) 输入设备, 和 (5) 输出设备. 例如, “计算机的中央处理单元相当于人体哪个部位”？
 
-Exercise 9: How do you fix a "Syntax Error"?
+习题 9: 如何解决一个“语法错误”？
