@@ -414,43 +414,18 @@ Python更像一只狗，无条件爱你，只能理解很少的关键词，一�
 学习之旅
 --------------------
 
-As you progress through the rest of the book, don't be afraid if the
-concepts don't seem to fit together well the first time. When you were
-learning to speak, it was not a problem for your first few years that
-you just made cute gurgling noises. And it was OK if it took six months
-for you to move from simple vocabulary to simple sentences and took 5-6
-more years to move from sentences to paragraphs, and a few more years to
-be able to write an interesting complete short story on your own.
+当阅读本书时，刚开始如果遇到某些概念不能很好理解时，不要担心。小时候学说话时，头几年只能发出一些可爱的喃喃之音，这不是什么问题。花6个月的时间，从能说简单的词汇发展到能表达简单的句子；再用5到6年的时间，从句子上升到段落；再过几年能依据自身兴趣，独立写出一篇有趣而完整的小故事，这样的发展过程是正常的.
 
-We want you to learn Python much more rapidly, so we teach it all at the
-same time over the next few chapters. But it is like learning a new
-language that takes time to absorb and understand before it feels
-natural. That leads to some confusion as we visit and revisit topics to
-try to get you to see the big picture while we are defining the tiny
-fragments that make up that big picture. While the book is written
-linearly, and if you are taking a course it will progress in a linear
-fashion, don't hesitate to be very nonlinear in how you approach the
-material. Look forwards and backwards and read with a light touch. By
-skimming more advanced material without fully understanding the details,
-you can get a better understanding of the "why?" of programming. By
-reviewing previous material and even redoing earlier exercises, you will
-realize that you actually learned a lot of material even if the material
-you are currently staring at seems a bit impenetrable.
 
-Usually when you are learning your first programming language, there are
-a few wonderful "Ah Hah!" moments where you can look up from pounding
-away at some rock with a hammer and chisel and step away and see that
-you are indeed building a beautiful sculpture.
+我们希望你能更快地学习Python，所以我们会在接下来的几章中把它们全部教给你。
 
-If something seems particularly hard, there is usually no value in
-staying up all night and staring at it. Take a break, take a nap, have a
-snack, explain what you are having a problem with to someone (or perhaps
-your dog), and then come back to it with fresh eyes. I assure you that
-once you learn the programming concepts in the book you will look back
-and see that it was all really easy and elegant and it simply took you a
-bit of time to absorb it.
+不过学习一门新语言需要花时间去吸收和理解，然后才能做到运用自如。因此可能会给你带来一些疑惑，因为我们会定义很多小的片段，它们之后会拼接成一副全景。而为了尝试让你看到全景，我们会一再提及一些片段。由于本书的编写是线性的，并且如果你参加一门课，其推进方式是线性的话，你完全也可以以一种非线性的方式去学习。可以前后来回翻阅，蜻蜓点水式的阅读，可以浏览一些有难度的内容，但并不一定要理解所有的细节，这样有助于更好的理解编程之“道”。尽管你正在阅读的地方看起来可能有些费解，但通过回顾之前的内容，或者重做之前做过的练习，你将会感觉收获颇多。
 
-Glossary
+通常在学习第一门编程语言时，会有一些值得欢呼雀跃的时刻。这就像你在用斧凿精心雕琢一块岩石，然后后退了几步，发现你真的在建造一尊美丽的雕塑。
+
+如果有些事看起来特别困难，通宵熬夜耗着是没有意义的。休息一下，打个盹，吃点零食，向某人（或许是你的狗）倾诉下你当下遇到的问题，然后，以全新的眼光回过头来再看这个问题。我保证，一旦你从本书中学会了编程的概念，回头看时，你会发现编程真的是非常简单、优雅的，只是需要花一些时间去吸收罢了。
+
+术语
 --------
 
 bug
