@@ -59,6 +59,38 @@ For Linux:
     tar xfv kindlegen_linux_2.6_i386_v2_9.tar.gz 
     cp kindlegen /usr/local/bin
 
+Chinese Version
+---------------
+
+If you are building the file for Chinese, touch the file
+
+    touch .chinese
+
+So it runs LaTeX in a way to produce chinese documents.
+
+Install the Adobe Ming Font (Linux):
+
+Download from here:
+
+    https://www.download-free-fonts.com/details/88177/adobe-ming-std-l
+
+You should get a file like `adobe-ming-std-l-594d6aed70209.otf`
+
+    [ -d /usr/share/fonts/opentype ] || sudo mkdir /usr/share/fonts/opentype
+    [ -d /usr/share/fonts/opentype/adobe-ming ] || sudo mkdir /usr/share/fonts/opentype/adobe-ming
+    sudo mv adobe-ming-std-l-594d6aed70209.otf /usr/share/fonts/opentype/adobe-ming
+    sudo fc-cache -f -v
+
+Strange Note:  If you are running on a small memory linux system, you 
+may encounter the error "I can't write on file `test.pdf'" - turns
+out this is `xelatex` running out of RAM - this fixed it.
+
+    dd if=/dev/zero of=/var/512mb.swap bs=1M count=512
+    mkswap /var/512mb.swap
+    swapon /var/512mb.swap
+
+Ref: https://tex.stackexchange.com/questions/16801/xelatex-i-cant-write-on-file-test-pdf
+
 ## Contributing
 
 If you want to contribute, feel free to fork the pythonlearn
