@@ -1,27 +1,20 @@
-Variables, expressions, and statements
+变量、表达式、语句
 ======================================
 
-Values and types
+值与类型
 ----------------
 
 \index{value}
 \index{type}
 \index{string}
 
-A *value* is one of the basic things a program works
-with, like a letter or a number. The values we have seen so far are
-`1`, `2`, and "Hello, World!"
+**值** 是程序要处理的一个基本要素，如一个字母或一个数字。目前为止，我们接触到的值有`1`、`2`和“Hello, World!”。
 
-These values belong to different *types*: `2`
-is an integer, and "Hello, World!" is a *string*, so
-called because it contains a "string" of letters. You (and the
-interpreter) can identify strings because they are enclosed in quotation
-marks.
+这些值属于不同的**类型**：2是整数，“Hello, World!”是**字符串**（因包含一“串”字母而得名）。因为字符串都在引号当中，你（以及解释器）可以根据引号来识别它们。
 
 \index{quotation mark}
 
-The `print` statement also works for integers. We use the
-`python` command to start the interpreter.
+`print`语句也可以打印整数。输入python命令启动解释器。
 
 ~~~~ {.python}
 python
@@ -29,7 +22,7 @@ python
 4
 ~~~~
 
-If you are not sure what type a value has, the interpreter can tell you.
+如果不确定一个值属于哪种类型，可以用解释器来确定。
 
 ~~~~ {.python .trinket height="160"}
 >>> type('Hello, World!')
@@ -38,11 +31,7 @@ If you are not sure what type a value has, the interpreter can tell you.
 <class 'int'>
 ~~~~
 
-Not surprisingly, strings belong to the type `str` and
-integers belong to the type `int`. Less obviously, numbers
-with a decimal point belong to a type called `float`, because
-these numbers are represented in a format called *floating
-point*.
+显而易见，字符串属于`str`类型，整数属于`int`类型。需要注意的是，带小数点的数字使用**浮点**（floating-point）格式表示，称为`float`类型。
 
 \index{type}
 \index{string type}
@@ -57,8 +46,7 @@ point*.
 <class 'float'>
 ~~~~
 
-What about values like "17" and "3.2"? They look like numbers, but
-they are in quotation marks like strings.
+那么，像'17'和'3.2'这种属于哪种类型呢？看起来像数字，但它们和字符串一样被放在单引号里面。
 
 \index{quotation mark}
 
@@ -69,28 +57,22 @@ they are in quotation marks like strings.
 <class 'str'>
 ~~~~
 
-They're strings.
+它们是字符串。
 
-When you type a large integer, you might be tempted to use commas
-between groups of three digits, as in `1,000,000`. This is
-not a legal integer in Python, but it is legal:
+输入较大的数字时，你可能会在每三个数字之间加一个逗号，例如，`1,000,000`。在Python中这不是一个合法的整数，但这句话是合法的：
 
 ~~~~ {.python .trinket height="120"}
 >>> print(1,000,000)
 1 0 0
 ~~~~
 
-Well, that's not what we expected at all! Python interprets
-`1,000,000` as a comma-separated sequence of integers, which
-it prints with spaces between.
+不过，这根本不是我们想要的！Python把`1,000,000`解释成了一个逗号分隔的整数序列，它把三部分依次打印出来了，中间用空格分隔。
 
 \index{semantic error}
 \index{error!semantic}
 \index{error message}
 
-This is the first example we have seen of a semantic error: the code
-runs without producing an error message, but it doesn't do the "right"
-thing.
+这是我们遇到的第一个语义错误例子：代码成功运行，没有任何错误信息，但是它并没有做“正确的事“。
 
 Variables
 ---------
@@ -260,7 +242,7 @@ floating point result:
 0.9833333333333333
 ~~~~
 
-The division operator in Python 2.0 would divide two integers and 
+The division operator in Python 2.0 would divide two integers and
 truncate the result to an integer:
 
 ~~~~ {.python}
@@ -429,7 +411,7 @@ Asking the user for input
 
 Sometimes we would like to take the value for a variable from the user
 via their keyboard. Python provides a built-in function called
-`input` that gets input from the keyboard^[In Python 2.0, this function was named `raw_input`.]. 
+`input` that gets input from the keyboard^[In Python 2.0, this function was named `raw_input`.].
 When this function is
 called, the program stops and waits for the user to type something. When
 the user presses `Return` or `Enter`, the program
@@ -857,4 +839,3 @@ Use the Python interpreter to check your answers.
 Exercise 5: Write a program which prompts the user for a Celsius
 temperature, convert the temperature to Fahrenheit, and print out the
 converted temperature.
-
