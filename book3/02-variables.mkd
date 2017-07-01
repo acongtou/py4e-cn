@@ -74,19 +74,16 @@ python
 
 这是我们遇到的第一个语义错误例子：代码成功运行，没有任何错误信息，但是它并没有做“正确的事“。
 
-Variables
+变量
 ---------
 
 \index{variable}
 \index{assignment statement}
 \index{statement!assignment}
 
-One of the most powerful features of a programming language is the
-ability to manipulate *variables*. A variable is a name
-that refers to a value.
+编程语言最强大的功能之一体现在对**变量**的操控能力。变量是指向一个值的名称。
 
-An *assignment statement* creates new variables and gives
-them values:
+**赋值** 语句用来创建新变量并对其赋值：
 
 ~~~~ {.python}
 >>> message = 'And now for something completely different'
@@ -94,12 +91,9 @@ them values:
 >>> pi = 3.1415926535897931
 ~~~~
 
-This example makes three assignments. The first assigns a string to a
-new variable named `message`; the second assigns the integer
-`17` to `n`; the third assigns the (approximate)
-value of $\pi$ to `pi`.
+这个例子列举了三个赋值语句。第一条语句将字符串赋值给变量`message`；第二条语句将整数`17`赋值给变量`n`，第三条语句将 $\pi$ 的(近似)值赋值给变量`pi`。
 
-To display the value of a variable, you can use a print statement:
+你可以使用打印语句来显示一个变量的值：
 
 ~~~~ {.python}
 >>> print(n)
@@ -108,7 +102,7 @@ To display the value of a variable, you can use a print statement:
 3.141592653589793
 ~~~~
 
-The type of a variable is the type of the value it refers to.
+变量的类型就是它所指向的值的类型。
 
 ~~~~ {.python}
 >>> type(message)
