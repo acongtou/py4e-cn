@@ -286,16 +286,13 @@ x + 1
 
 当不能确定运算顺序时，通常使用括号来确保我们想要的运算顺序。
 
-Modulus operator
+模运算
 ----------------
 
 \index{modulus operator}
 \index{operator!modulus}
 
-The *modulus operator* works on integers and yields the
-remainder when the first operand is divided by the second. In Python,
-the modulus operator is a percent sign (`%`). The syntax is the same as
-for other operators:
+**模** 的运算对象是整数，得到的是第一个整数除以第二个整数的余数。在Python中，模运算符用百分号（`%`）表示，语法与其他运算符一样：
 
 ~~~~ {.python .trinket height="240"}
 >>> quotient = 7 // 3
@@ -306,11 +303,9 @@ for other operators:
 1
 ~~~~
 
-So 7 divided by 3 is 2 with 1 left over.
+如，7被3所除的商是2，余数是1。
 
-The modulus operator turns out to be surprisingly useful. For example,
-you can check whether one number is divisible by another: if `x %
-y` is zero, then `x` is divisible by `y`.
+模运算非常实用。举例来说，你可以检验一个数是否能被另一个数整除，如果`x%y`的结果是0，那么`x`能被`y`整除。
 
 \index{divisibility}
 
