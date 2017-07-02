@@ -248,7 +248,7 @@ x
 x + 17
 ~~~~
 
-如果在交互模式中输入一个表达式，解释器就会执行它并把结果打印出来:
+如果在交互模式中输入一个表达式，解释器就会**运算**它并把结果打印出来:
 
 ~~~~ {.python}
 >>> 1 + 1
@@ -265,45 +265,26 @@ x = 5
 x + 1
 ~~~~
 
-Order of operations
+运算顺序
 -------------------
 
 \index{order of operations}
 \index{rules of precedence}
 \index{PEMDAS}
 
-When more than one operator appears in an expression, the order of
-evaluation depends on the *rules of precedence*. For
-mathematical operators, Python follows mathematical convention. The
-acronym *PEMDAS* is a useful way to remember the rules:
+当一个表达式中出现多个运算符时，运算顺序由优先级规则来确定。对于数学运算符来说，Python遵照数学运算习惯，即“括号、次方、乘除、加减”。
 
 \index{parentheses!overriding precedence}
 
--   *P*arentheses have the highest precedence and can be
-    used to force an expression to evaluate in the order you want. Since
-    expressions in parentheses are evaluated first, `2 *
-    (3-1)` is 4, and `(1+1)**(5-2)` is 8. You can
-    also use parentheses to make an expression easier to read, as in
-    `(minute * 100) / 60`, even if it doesn't change the
-    result.
+-   **括号** 拥有最高运算优先级，可以强制表达式按特定顺序运算。括号内的表达式最先进行运算，例如，`2 * (3-1)` 等于4，`(1+1)**(5-2)` 等于8。有时候，使用括号即便没有改变运算结果，但阅读起来会更加方便，例如，(minute * 100) / 60。
 
--   *E*xponentiation has the next highest precedence, so
-    `2**1+1` is 3, not 4, and `3*1**3` is 3,
-    not 27.
+-   **幂运算**（次方、乘方）的优先级仅次于括号，例如，`2**1+1` 等于3，而不是4，`3*1**3`等于3，而不是27。
 
--   *M*ultiplication and *D*ivision have
-    the same precedence, which is higher than *A*ddition
-    and *S*ubtraction, which also have the same
-    precedence. So `2*3-1` is 5, not 4, and
-    `6+4/2` is 8.0, not 5.
+-   **乘法** 和 **除法** 具有相同的优先级，**加法** 和 **减法** 也具有相同的优先级，且乘除高于加减。所以，`2*3 -1`等于5，而不是 4，`6+4/2`等于8.0，而不是5。
 
--   Operators with the same precedence are evaluated from left to right.
-    So the expression `5-3-1` is 1, not 3, because the
-    `5-3` happens first and then `1` is subtracted
-    from `2`.
+-   相同优先级的运算符按从左到右的顺序依次运算。所以，`5-3-1`等于1，而不是3。先计算`5-3`得到2，然后再减1。
 
-When in doubt, always put parentheses in your expressions to make sure
-the computations are performed in the order you intend.
+当不能确定运算顺序时，通常使用括号来确保我们想要的运算顺序。
 
 Modulus operator
 ----------------
