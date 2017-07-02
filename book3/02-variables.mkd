@@ -234,13 +234,10 @@ print(x)
 \index{floating-point division}
 \index{division!floating-point}
 
-Expressions
+表达式
 -----------
 
-An *expression* is a combination of values, variables,
-and operators. A value all by itself is considered an expression, and so
-is a variable, so the following are all legal expressions (assuming that
-the variable `x` has been assigned a value):
+**表达式** 是值、变量和运算符的组合。值本身可以是一个表达式，变量亦如此。所以下面都是合法的表达式（假设变量x已被赋值）：
 
 \index{expression}
 \index{evaluate}
@@ -251,20 +248,16 @@ x
 x + 17
 ~~~~
 
-If you type an expression in interactive mode, the interpreter
-*evaluates* it and displays the result:
+如果在交互模式中输入一个表达式，解释器就会执行它并把结果打印出来:
 
 ~~~~ {.python}
 >>> 1 + 1
 2
 ~~~~
 
-But in a script, an expression all by itself doesn't do anything! This
-is a common source of confusion for beginners.
+然而，在一个程序中，表达式本身并不能做任何事情！这是初学者容易混淆的一点。
 
-
-Exercise 1: Type the following statements in the Python interpreter to
-see what they do:
+习题 1: 在Python解释器中输入下面的语句并查看结果：
 
 ~~~~ {.python}
 5
