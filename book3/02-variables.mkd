@@ -309,21 +309,15 @@ x + 1
 
 \index{divisibility}
 
-You can also extract the right-most digit or digits from a number. For
-example, `x % 10` yields the right-most digit of
-`x` (in base 10). Similarly, `x % 100` yields the
-last two digits.
+另外，模运算也可以提取一个数字最右边的数位。举例来说，`x%10`可以提取`x`最右边的一位数字（以10为基数）。同理，`x%100`可以提取最右边的两位数字。
 
-String operations
+字符串运算符
 -----------------
 
 \index{string!operation}
 \index{operator!string}
 
-The `+` operator works with strings, but it is not addition
-in the mathematical sense. Instead it performs
-*concatenation*, which means joining the strings by
-linking them end to end. For example:
+加号 `+` 也可以操作于字符串，但是这时它不是数学里面加法的含义，而是，它会把字符串首尾**相连**。例如：
 
 \index{concatenation}
 
@@ -338,7 +332,7 @@ linking them end to end. For example:
 100150
 ~~~~
 
-The output of this program is `100150`.
+这个程序的输出结果是`100150`。
 
 Asking the user for input
 -------------------------
