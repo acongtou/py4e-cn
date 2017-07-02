@@ -157,25 +157,20 @@ def       for       lambda    return
 
 你可以在手边存留一份。如果解释器在一个变量名那里报错，而你又不知道为什么，那么检查一下它是否在这个列表里面。
 
-Statements
+语句
 ----------
 
-A *statement* is a unit of code that the Python
-interpreter can execute. We have seen two kinds of statements: print being
-an expression statement and assignment.
+**语句** 是Python解释器能够执行的代码单元。我们已经见到过两种语句：print和assignment。
 
 \index{statement}
 \index{interactive mode}
 \index{script mode}
 
-When you type a statement in interactive mode, the interpreter executes
-it and displays the result, if there is one.
+当你在交互模式中输入一条语句，解释器就会执行它并打印出结果（如果有结果的话）。
 
-A script usually contains a sequence of statements. If there is more
-than one statement, the results appear one at a time as the statements
-execute.
+一个脚本通常包含一连串的语句。如果超过一句的话，结果会随着程序的执行，一句一句地产生。
 
-For example, the script
+如，以下脚本：
 
 ~~~~ {.python}
 print(1)
@@ -183,16 +178,16 @@ x = 2
 print(x)
 ~~~~
 
-produces the output
+产生下列结果：
 
 ~~~~
 1
 2
 ~~~~
 
-The assignment statement produces no output.
+其中，赋值语句没有输出结果。
 
-Operators and operands
+运算符和运算对象
 ----------------------
 
 \index{operator, arithmetic}
@@ -200,21 +195,15 @@ Operators and operands
 \index{operand}
 \index{expression}
 
-*Operators* are special symbols that represent
-computations like addition and multiplication. The values the operator
-is applied to are called *operands*.
+**运算符** 是表示运算的特殊符号，例如，加法与乘法。运算符操作的值称为运算对象(或运算数，译者注)。
 
-The operators `+`, `-`, `*`, `/`, and
-`**` perform addition, subtraction, multiplication, division,
-and exponentiation, as in the following examples:
+`+`、`-`、`*`、`/`和`**`五个运算符分别代表加、减、乘、除和次方的运算，请看如下示例：
 
 ~~~~ {.python}
 20+32   hour-1   hour*60+minute   minute/60   5**2   (5+9)*(15-7)
 ~~~~
 
-There has been a change in the division operator between Python 2.x
-and Python 3.x.  In Python 3.x, the result of this division is a
-floating point result:
+对于除法运算符而言，Python 2.x 版本和 Python 3.x 版本有一点区别。在 Python 3.x 中，除法的结果是一个浮点数：
 
 ~~~~ {.python .trinket height="160"}
 >>> minute = 59
@@ -222,8 +211,7 @@ floating point result:
 0.9833333333333333
 ~~~~
 
-The division operator in Python 2.0 would divide two integers and
-truncate the result to an integer:
+在 Python 2.0 中，两个整数相除，会得到一个被截断的整数（0.59，会被截断成0，译者注）：
 
 ~~~~ {.python}
 >>> minute = 59
@@ -231,7 +219,7 @@ truncate the result to an integer:
 0
 ~~~~
 
-To obtain the same answer in Python 3.0 use floored ( // integer) division.
+要想在 Python 3.0 中得到和上面一样的结果，要使用地板除法（ // 整数 ）。
 
 ~~~~ {.python .trinket  height="160"}
 >>> minute = 59
@@ -239,8 +227,7 @@ To obtain the same answer in Python 3.0 use floored ( // integer) division.
 0
 ~~~~
 
-In Python 3.0 integer division functions much more as you would expect
-if you entered the expression on a calculator.
+在 Python 3.0 中，整数相除的结果会像你所期望的那样，和你使用计算器得到的结果一样。
 
 \index{Python 3.0}
 \index{Python 2.0}
