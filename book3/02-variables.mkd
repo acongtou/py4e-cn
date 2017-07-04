@@ -399,48 +399,38 @@ ValueError: invalid literal for int() with base 10:
 
 \index{comment}
 
-As programs get bigger and more complicated, they get more difficult to
-read. Formal languages are dense, and it is often difficult to look at a
-piece of code and figure out what it is doing, or why.
+当程序变得越来越长并且越来越复杂时，阅读难度也随之增大。正式的程序代码很密集，经常会遇到看不懂这段代码是做什么的，或者为什么要这样写。
 
-For this reason, it is a good idea to add notes to your programs to
-explain in natural language what the program is doing. These notes are
-called *comments*, and in Python they start with the `#`
-symbol:
+为解决这个问题，在程序代码中加入自然语言说明，来解释这段代码的作用，这会是一个不错的主意。这些说明称为**注释**，它们以`#`号开头：
 
 ~~~~ {.python}
 # compute the percentage of the hour that has elapsed
 percentage = (minute * 100) / 60
 ~~~~
 
-In this case, the comment appears on a line by itself. You can also put
-comments at the end of a line:
+上面这种情况，注释本身占一行。你也可以把它加到一行代码的末尾：
 
 ~~~~ {.python}
 percentage = (minute * 100) / 60     # percentage of an hour
 ~~~~
 
-Everything from the `\#` to the end of the line is ignored; it
-has no effect on the program.
+从`\#`号开始到这一行的最后，解释时都会被忽略掉，它们不会对程序产生任何影响。
 
-Comments are most useful when they document non-obvious features of the
-code. It is reasonable to assume that the reader can figure out *what*
-the code does; it is much more useful to explain *why*.
+对代码不显著的特征进行注释是非常有用的。我们可以合理假设读者能够理解代码在**做什么**，但是更有用的是，解释一下**为什么**。
 
-This comment is redundant with the code and useless:
+下面这行注释就是多余的，没什么作用：
 
 ~~~~ {.python}
 v = 5     # assign 5 to v
 ~~~~
 
-This comment contains useful information that is not in the code:
+而下面的这行注释则包含了有用的信息，是单纯地看代码看不出来的：
 
 ~~~~ {.python}
 v = 5     # velocity in meters/second.
 ~~~~
 
-Good variable names can reduce the need for comments, but long names can
-make complex expressions hard to read, so there is a trade-off.
+清晰易懂的变量名能够减少注释的使用，但是变量名如果太长，就会使复杂的表达式变得更加难懂，所以需要权衡利弊。
 
 Choosing mnemonic variable names
 --------------------------------
