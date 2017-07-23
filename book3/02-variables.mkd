@@ -495,21 +495,17 @@ for slice in pizza:
 
 这段代码中，由Python定义的部分被加粗了（`for`, `in`, `print`, 和 `:`），程序员选择的变量名（`word` 和 `words`）则没有被加粗。很多文本编辑器能感知到Python的语法，并且会用不同的颜色来标记保留字，以让你能够更好的区分变量名与保留字。熟悉一段时间后，你就会很快地区分哪些是变量名，哪些保留字了。
 
-Debugging
+调试
 ---------
 
 \index{debugging}
 
-At this point, the syntax error you are most likely to make is an
-illegal variable name, like `class` and `yield`,
-which are keywords, or `odd~job` and `US$`, which contain illegal
-characters.
+目前，你最容易犯的语法错误应该是使用了一个不合法的变量名，比如 `class` 和 `yield`，它们是保留字，又或者 `odd~job` 和 `US$`，它们含有不合法的字符。
 
-\index{syntax error}
-\index{error!syntax}
+\index{语法错误}
+\index{错误!语法}
 
-If you put a space in a variable name, Python thinks it is two operands
-without an operator:
+如果你在变量名中放一个空格，Python会认为它是没有运算符的两个运算对象：
 
 ~~~~ {.python}
 >>> bad name = 5
@@ -524,20 +520,15 @@ SyntaxError: invalid syntax
 SyntaxError: invalid token
 ~~~~
 
-For syntax errors, the error messages don't help much. The most common
-messages are `SyntaxError: invalid syntax` and
-`SyntaxError: invalid token`, neither of which is very
-informative.
+对语法错误而言，错误信息并不能提供多少帮助。最常见的信息是 `SyntaxError: invalid syntax` 和 `SyntaxError: invalid token`，而这两条都没什么信息量。
 
-\index{error message}
-\index{use before def}
-\index{exception}
-\index{runtime error}
-\index{error!runtime}
+\index{错误信息}
+\index{定义前使用}
+\index{例外}
+\index{运行错误}
+\index{错误!运行}
 
-The runtime error you are most likely to make is a "use before def;"
-that is, trying to use a variable before you have assigned a value. This
-can happen if you spell a variable name wrong:
+最常遇到的运行错误是“use before def;（定义前就使用）”，也就是，你在尝试使用一个还没有被赋值的变量。变量名拼写不正确就会导致这个错误：
 
 ~~~~ {.python}
 >>> principal = 327.68
@@ -545,27 +536,21 @@ can happen if you spell a variable name wrong:
 NameError: name 'principle' is not defined
 ~~~~
 
-Variables names are case sensitive, so `LaTeX` is not the
-same as `latex`.
+变量名区分大小写，所以，`LaTeX` 和 `latex` 是不一样的。
 
-\index{case-sensitivity, variable names}
-\index{semantic error}
-\index{error!semantic}
+\index{区分大小写, 变量名}
+\index{语义错误}
+\index{错误!语义}
 
-At this point, the most likely cause of a semantic error is the order of
-operations. For example, to evaluate $1/2\pi$, you might be
-tempted to write
+目前，最容易犯的语义错误在运算顺序上。比如，要运算 $1/2\pi$，你可能会写成这样：
 
 ~~~~ {.python}
 >>> 1.0 / 2.0 * pi
 ~~~~
 
-But the division happens first, so you would get $\pi / 2$, which is not
-the same thing! There is no way for Python to know what you meant to
-write, so in this case you don't get an error message; you just get the
-wrong answer.
+而这样的话，就是先进行除法运算，得到的是 $\pi / 2$，和你的目的不一样！但是Python并不明白你想要表达的是什么，所以在这种情况下，它并不会报错，但是你得到的答案不是你想要的。
 
-\index{order of operations}
+\index{运算顺序}
 
 Glossary
 --------
