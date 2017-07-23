@@ -317,9 +317,9 @@ x + 1
 \index{string!operation}
 \index{operator!string}
 
-加号 `+` 也可以操作于字符串，但是这时它不是数学里面加法的含义，而是，它会把字符串首尾**相连**。例如：
+加号 `+` 也可以操作于字符串，但是这时它不是数学里面加法的含义，而是，它会把字符串首尾**串联**。例如：
 
-\index{concatenation}
+\index{串联}
 
 ~~~~ {.python}
 >>> first = 10
@@ -552,96 +552,81 @@ NameError: name 'principle' is not defined
 
 \index{运算顺序}
 
-Glossary
+术语表
 --------
 
-assignment
-:   A statement that assigns a value to a variable.
-\index{assignment}
+赋值
+:   给变量赋予一个值的语句。
+\index{赋值}
 
-concatenate
-:   To join two operands end to end.
-\index{concatenation}
+串联
+:   将两个运算对象首位相连。
+\index{串联}
 
-comment
-:   Information in a program that is meant for other programmers (or
-    anyone reading the source code) and has no effect on the execution
-    of the program.
-\index{comment}
+注释
+:   程序里面包含的信息，旨在帮助其他程序员（或任何查看源码的人）理解程序，而不会对程序的执行产生任何影响。
+\index{注释}
 
-evaluate
-:   To simplify an expression by performing the operations in order to
-    yield a single value.
+求值
+:   对表达式进行运算，得到单个值。
 
-expression
-:   A combination of variables, operators, and values that represents a
-    single result value.
-\index{expression}
+表达式
+:   变量、运算符和值的组合，表示单个结果值。
+\index{表达式}
 
-floating point
-:   A type that represents numbers with fractional parts.
-\index{floating-point}
+浮点数
+:   代表有小数部分的数值类型。
+\index{浮点数}
 
-integer
-:   A type that represents whole numbers.
-\index{integer}
+整数
+:   代表整数类型
+\index{整数}
 
-keyword
-:   A reserved word that is used by the compiler to parse a program; you
-    cannot use keywords like `if`, `def`, and
-    `while` as variable names.
-\index{keyword}
+关键字
+:   Python解释器用来解析程序的保留字。变量名不能使用保留字，如 `if`, `def`, 和 `while` 等。
+\index{关键字}
 
-mnemonic
-:   A memory aid. We often give variables mnemonic names to help us
-    remember what is stored in the variable.
-\index{mnemonic}
+助记法
+:   一种辅助记忆的方法。我们通常使用易记的变量名来帮助我们记住变量存储的内容。
+\index{助记法}
 
-modulus operator
-:   An operator, denoted with a percent sign (`%`), that
-    works on integers and yields the remainder when one number is
-    divided by another.
-\index{modulus operator}
-\index{operator!modulus}
+模运算
+:   一种运算符，用百分号（`%`）表示，求两个整数相除的余数。
+\index{模运算}
+\index{运算符!模}
 
-operand
-:   One of the values on which an operator operates.
-\index{operand}
+运算对象
+:   运算符操作的值。
+\index{运算对象}
 
-operator
-:   A special symbol that represents a simple computation like addition,
-    multiplication, or string concatenation.
-\index{operator}
+运算符
+:   代表着简单运算的一类特殊符号，如加法、乘法和字符串串联。
+\index{运算符}
 
-rules of precedence
-:   The set of rules governing the order in which expressions involving
-    multiple operators and operands are evaluated.
-\index{rules of precedence}
-\index{precedence}
+运算优先级
+:   一组运算规则，用来规定在有多个运算符和运算对象的表达式中的求值顺序。
+\index{运算优先级}
+\index{优先级}
 
-statement
-:   A section of code that represents a command or action. So far, the
-    statements we have seen are assignments and print expression statement.
-\index{statement}
+语句
+:   表示一个命令的一段代码。目前为止，我们见到的语句有赋值语句和打印语句。
+\index{语句}
 
-string
-:   A type that represents sequences of characters.
-\index{string}
+字符串
+:   由字符序列组成的一种数据类型。
+\index{字符串}
 
-type
-:   A category of values. The types we have seen so far are integers
-    (type `int`), floating-point numbers (type
-    `float`), and strings (type `str`).
-\index{type}
+类型
+:   表示一类值。目前，我们已经见到的类型有整数（`int`），浮点数（`float`），和字符串（`str`）。
+\index{类型}
 
-value
-:   One of the basic units of data, like a number or string, that a
-    program manipulates.
-\index{value}
+值
+:   数据的一种基本单元。如一个数字或一个字符串，可以被程序操作。
+\index{值}
 
-variable
-:   A name that refers to a value.
-\index{variable}
+变量
+:   一个值的引用名称。
+\index{变量}
 
 Exercises
 ---------
