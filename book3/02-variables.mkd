@@ -628,19 +628,17 @@ NameError: name 'principle' is not defined
 :   一个值的引用名称。
 \index{变量}
 
-Exercises
+习题
 ---------
 
-Exercise 2: Write a program that uses `input` to prompt a user for
-their name and then welcomes them.
+习题 2: 使用 `input` 编写一个程序，提示用户输入姓名，然后打印欢迎语。
 
 ~~~~
 Enter your name: Chuck
 Hello Chuck
 ~~~~
 
-Exercise 3: Write a program to prompt the user for hours and rate per
-hour to compute gross pay.
+习题 3: 编写一个程序，提示用户输入工时和时薪，然后计算出总工资。
 
 ~~~~
 Enter Hours: 35
@@ -648,20 +646,16 @@ Enter Rate: 2.75
 Pay: 96.25
 ~~~~
 
-We won't worry about making sure our pay has exactly two digits after
-the decimal place for now. If you want, you can play with the built-in
-Python `round` function to properly round the resulting pay
-to two decimal places.
+我们暂时不用担心我们计算的结果是否能正好精确到小数点后两位。如果你非常想的话，可以试一试Python内置的 `round` 函数，它可以把结果约到两位数。
 
-Exercise 4: Assume that we execute the following assignment statements:
+Exercise 4: 假设我们执行了下面的赋值语句：
 
 ~~~~
 width = 17
 height = 12.0
 ~~~~
 
-For each of the following expressions, write the value of the expression
-and the type (of the value of the expression).
+对于下面每一个表达式，写出它的结果，及其结果类型。
 
 1.  `width//2`
 
@@ -671,8 +665,6 @@ and the type (of the value of the expression).
 
 4.  `1 + 2 \* 5`
 
-Use the Python interpreter to check your answers.
+使用Python解释器检查你的结果。
 
-Exercise 5: Write a program which prompts the user for a Celsius
-temperature, convert the temperature to Fahrenheit, and print out the
-converted temperature.
+Exercise 5: 写一个程序，提示用户输入摄氏温度，然后将其转化成华氏温度，并且把结果打印出来。
