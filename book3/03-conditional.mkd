@@ -1,18 +1,15 @@
-Conditional execution
+条件执行
 =====================
 
-Boolean expressions
+布尔表达式
 -------------------
 
-\index{boolean expression}
-\index{expression!boolean}
-\index{logical operator}
-\index{operator!logical}
+\index{布尔表达式}
+\index{表达式!布尔}
+\index{逻辑运算符}
+\index{运算符!逻辑}
 
-A *boolean expression* is an expression that is either
-true or false. The following examples use the operator `==`,
-which compares two operands and produces `True` if they are
-equal and `False` otherwise:
+**布尔表达式** 是具有真或假状态的一种表达式。下面的例子用运算符`==`来比较两个运算对象，若两者相等则返回`True`，否则返回`False`：
 
 ~~~~ {.python .trinket}
 >>> 5 == 5
@@ -22,15 +19,14 @@ False
 {}
 ~~~~
 
-`True` and `False` are special values that belong
-to the class `bool`; they are not strings:
+`True`和`False`（`真`和`假`）是一种特殊的值，属于布尔类型；它们并不是字符串：
 
-\index{True special value}
-\index{False special value}
-\index{special value!True}
-\index{special value!False}
-\index{bool type}
-\index{type!bool}
+\index{True 特殊值}
+\index{False 特殊值}
+\index{特殊值!True}
+\index{特殊值!False}
+\index{布尔类型}
+\index{类型!布尔}
 
 ~~~~ {.python}
 >>> type(True)
@@ -39,8 +35,7 @@ to the class `bool`; they are not strings:
 <class 'bool'>
 ~~~~
 
-The `==` operator is one of the *comparison
-operators*; the others are:
+`==`是一个**比较运算符**，其他的比较运算符如下：
 
 ~~~~ {.python}
       x != y               # x is not equal to y
@@ -52,18 +47,12 @@ operators*; the others are:
       x is not y           # x is not the same as y
 ~~~~
 
-Although these operations are probably familiar to you, the Python
-symbols are different from the mathematical symbols for the same
-operations. A common error is to use a single equal sign
-(`=`) instead of a double equal sign (`==`).
-Remember that `=` is an assignment operator and
-`==` is a comparison operator. There is no such thing as
-`=<` or `=>`.
+虽然你可能很熟悉这些运算符，但要注意这些Python符号并不等同于数学符号。一个常见的错误是用了单等号（`=`），而没有用双等号（`==`）。请记住，`=`是赋值运算符，`==`是比较运算符。不存在`=<`或`=>`这样的运算符。
 
-\index{comparison operator}
-\index{operator!comparison}
+\index{比较运算符}
+\index{运算符!比较}
 
-Logical operators
+逻辑运算符
 -----------------
 
 \index{logical operator}
