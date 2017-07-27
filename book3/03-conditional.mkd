@@ -93,7 +93,7 @@ is, if `x` is less than or equal to `y`.
 
 Strictly speaking, the operands of the logical operators should be
 boolean expressions, but Python is not very strict. Any nonzero number
-is interpreted as "true."
+is interpreted as "true".
 
 ~~~~ {.python}
 >>> 17 and True
