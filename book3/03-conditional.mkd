@@ -55,43 +55,34 @@ False
 逻辑运算符
 -----------------
 
-\index{logical operator}
-\index{operator!logical}
+\index{逻辑运算符}
+\index{运算符!逻辑}
 
-There are three *logical operators*: `and`,
-`or`, and `not`. The semantics (meaning) of these
-operators is similar to their meaning in English. For example,
+**逻辑运算符** 包括`and`（与）、`or`（或）与`not`（非）三个。这些运算符的语义与它们的英文含义相似。例如，
 
 `x > 0 and x < 10`
 
-is true only if `x` is greater than 0 *and* less than 10.
+只在`x`大于0**并且**小于10时为真。
 
-\index{and operator}
-\index{or operator}
-\index{not operator}
-\index{operator!and}
-\index{operator!or}
-\index{operator!not}
+\index{与运算符}
+\index{或运算符}
+\index{非运算符}
+\index{运算符!与}
+\index{运算符!或}
+\index{运算符!非}
 
-`n%2 == 0 or n%3 == 0` is true if *either* of the conditions
-is true, that is, if the number is divisible by 2 *or* 3.
+若`n%2 == 0 or n%3 == 0`其中有一个条件为真，也就是说，这个数字能被2**或者**3整除，那么整句话就为真。
 
-Finally, the `not` operator negates a boolean expression, so
-`not (x > y)` is true if `x > y` is false; that
-is, if `x` is less than or equal to `y`.
+最后一个，`not`运算符会对一个布尔表达式的结果取反。所以，若`x > y`为假，也就是`x`小于或等于`y`，则`not (x > y)`为真；
 
-Strictly speaking, the operands of the logical operators should be
-boolean expressions, but Python is not very strict. Any nonzero number
-is interpreted as "true."
+严格讲，逻辑运算符的运算对象应该是布尔表达式，但在Python中并不是很严格。任何非零数字都可看作是“真”。
 
 ~~~~ {.python}
 >>> 17 and True
 True
 ~~~~
 
-This flexibility can be useful, but there are some subtleties to it that
-might be confusing. You might want to avoid it until you are sure you
-know what you are doing.
+这种灵活性的存在是有用的，但也会产生一些微妙的困惑。除非你清楚自己在做什么，否则不要乱用。
 
 Conditional execution
 ---------------------
