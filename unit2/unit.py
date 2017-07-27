@@ -36,6 +36,8 @@ toskip = [
     'urllink3.py' # might run forever
 ]
 
+print('======== Starting Python 2 Tests ==============')
+
 success = 0
 fail = 0
 codefolder = '../code'
@@ -78,10 +80,10 @@ for i in os.listdir(codefolder):
         continue
 
     fail = fail + 1
-    print (cmd)
+    print ('*** FAIL2 ***',cmd)
 
-print('Tests passed:',success)
-print('Tests failed:',fail)
+print('Tests 2 passed:',success)
+print('Tests 2 failed:',fail)
 if ( len(failures) > 0 ) : print('Unit Test TODO:',failures)
 os.system("rm *.sqlite")
 
